@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Main-header {
+    width: 100%;
+
+    .Top-header {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        background: $Color-one;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+    }
+}
+
+.Bottom-header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    direction: rtl;
+    z-index: 1000;
+    background-color: white;
+    transition: box-shadow 1s;
+    // box-shadow: 1px 3px 30px rgb(209, 209, 209);
+
+    position: sticky;
+    top: 0;
+
+    // top: 270px;
+    // left: 0;
+    // animation: move 2s;
+
+    // @keyframes move {
+    //     0% {
+    //         opacity: 70%;
+    //         top: 200px;
+    //     }
+
+    //     100% {
+    //         opacity: 100%;
+    //         top: 270px;
+    //     }
+    // }
+
+    .menu-bar {
+        width: 80%;
+        height: 100%;
+        margin-right: 50px;
+    }
+
+    .menu-bar ul {
+        width: 100%;
+        margin: 10px;
+        padding: 0;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        direction: rtl;
+
+        li {
+            padding: 10px;
+            margin: 5px 20px;
+            list-style: none;
+            color: white;
+            background-color: $Color-two;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: $Color-one;
+            }
+
+            a {
+                font-size: 15px;
+                font-family: tanha;
+                color: white;
+                text-decoration: white;
+            }
+        }
+    }
+}
+
+.Bottom-header,
+.Main-header {
+    animation: first_move 2s;
+
+    @keyframes first_move {
+        0% {
+            transform: translateY(-120px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
+
+.About-me {
+    width: 100%;
+    height: 70vh;
+    margin: 10px 0;
+    padding: 10px 0;
+
+    main {
+        margin: 50px 20px 50px 20px;
+        display: flex;
+        flex-direction: center;
+    }
+
+    .right-side {
+        width: 40%;
+        display: inline-block;
+
+        animation: second_move_1 2s;
+
+        @keyframes second_move_1 {
+            0% {
+                transform: translateX(-120px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    }
+
+    .left-side {
+        width: 55%;
+        height: 100%;
+        display: inline-block;
+
+        animation: second_move_2 2s;
+
+        @keyframes second_move_2 {
+            0% {
+                transform: translateX(120px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+.My-Languages {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+
+    .Languages {
+        &-div {
+            display: inline-block;
+            width: 48%;
+            
+            .progress {
+                width: 90%;
+            }
+        }
+    }
+}
+
+.Up-button {
+    z-index: 200000;
+    position: fixed;
+    left: 92vw;
+    top: 100vh;
+}
+
+.My-Works {
+    position: relative;
+    top: 0;
+    left: -50vh;
+    transition: left 2s;
+    margin: 70px 5px;
+
+    .Works {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

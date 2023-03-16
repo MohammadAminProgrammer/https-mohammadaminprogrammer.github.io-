@@ -1,0 +1,520 @@
+@import "_Componets";
+@import "_Layout";
+
+.right {
+    width: 400px;
+
+    .My-Image {
+        width: 60%;
+        height: 80%;
+        border-radius: 100%;
+        box-shadow: 5px 5px 20px black;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        animation: move-right 2s;
+
+        @keyframes move-right {
+            0% {
+                opacity: 0%;
+            }
+
+            100% {
+                opacity: 70%;
+            }
+        }
+
+        opacity: 70%;
+
+        &:hover {
+            opacity: 100%;
+        }
+    }
+}
+
+.image-menubar {
+    width: 5%;
+    height: 80%;
+    margin: 3px;
+    // position: relative;
+    // bottom: 80px;
+    // right: 10px;
+    border-radius: 100%;
+    transition: all 1s;
+
+    &:hover {
+        opacity: 100%;
+        box-shadow: 2px 2px 20px #e0e0e0;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        animation: move-right-menubar 2s;
+
+        @keyframes move-right-menubar {
+            0% {
+                opacity: 0%;
+            }
+
+            100% {
+                opacity: 70%;
+            }
+        }
+
+        opacity: 70%;
+    }
+}
+
+.center {
+    width: 400px;
+    margin-left: 300px;
+    margin-top: 60px;
+    text-align: center;
+
+    animation: move-center 2s;
+
+    @keyframes move-center {
+        0% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    h1 {
+        display: inline-block;
+        color: $Color-three;
+        font-family: Lalezar;
+        font-size: 35px;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+            color: white;
+            font-size: 37px;
+        }
+    }
+
+    h3 {
+        display: inline-block;
+        color: $Color-three;
+        font-family: Lalezar;
+        font-size: 21px;
+        font-weight: 100;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+            color: white;
+            font-size: 24px;
+        }
+    }
+}
+
+.right-side {
+    .My-Image {
+        width: 70%;
+        height: 90%;
+        border-radius: 100%;
+        box-shadow: 5px 5px 20px black;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        animation: move-right 2s;
+
+        @keyframes move-right {
+            0% {
+                opacity: 0%;
+            }
+
+            100% {
+                opacity: 70%;
+            }
+        }
+
+        opacity: 70%;
+
+        &:hover {
+            opacity: 100%;
+        }
+    }
+}
+
+.left-side {
+    p {
+        font-family: tanha;
+        color: gray;
+        font-size: 22px;
+        direction: rtl;
+        text-align: right;
+        cursor: pointer;
+        margin-top: 50px;
+
+        transition: all 0.5s;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.My-Languages {
+    margin-top: 50px;
+
+    label {
+        font-family: Lalezar;
+        font-size: 18px;
+        margin: 12px;
+    }
+
+    .progress {
+        width: 100%;
+    }
+
+    .progress-bar {
+        font-weight: bold;
+        transition: width 2s;
+        width: 0%;
+    }
+}
+
+// .My-Works {
+//     width: 100%;
+//     margin: 10px 0;
+//     padding: 10px;
+
+//     table {
+//         border: 1px solid #e7e7e7;
+//         width: 100%;
+//         direction: rtl;
+//     }
+
+//     tr {
+//         border-bottom: 1px solid #e7e7e7;
+//         padding: 10px;
+//         transition: all 0.5s;
+
+//         &:hover {
+//             cursor: pointer;
+//             background-color: $Color-three;
+//         }
+//     }
+
+//     th {
+//         background-color: #f7f7f7;
+//     }
+
+//     th, td {
+//         padding: 20px;
+//         border-right: 1px solid #e7e7e7;
+//         direction: rtl;
+//         text-align: right;
+//         transition: all 0.5s;
+//         font-family: Tanha;
+
+//         &:hover {
+//             cursor: pointer;
+//             background-color: rgb(190, 190, 190);
+//         }
+//     }
+// }
+
+.Up-button {
+    transition: top 1s;
+
+    .Button-div {
+        button {
+            padding: 7px;
+            width: 5vw;
+            height: 5vw;
+            background-color: $Color-one;
+            border-radius: 100%;
+            border: 1px solid #11137a;
+            transition: all 1s;
+            outline: none;
+
+            &:hover {
+                box-shadow: 1px 1px 10px $Color-one;
+                cursor: pointer;
+                background-color: $Color-four;
+            }
+
+            &:active {
+                background-color: #0e0f64;
+            }
+
+            i {
+                color: white;
+                font-size: 4vh;
+            }
+        }
+    }
+}
+
+.My-Works {
+    .Work {
+        width: 60vh;
+        height: 50vh;
+        overflow: hidden;
+        margin: 10px 20px;
+
+        img {
+            border-radius: 10%;
+            width: 100%;
+            height: 100%;
+            opacity: 70%;
+            transition: opacity 2s;
+        }
+
+        div {
+            background-color: rgba(230, 230, 230, 0.603);
+            position: relative;
+            top: 100%;
+            transition: all 1s;
+            border-radius: 10%;
+            padding: 20% 10%;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                text-align: center;
+                font-family: Lalezar;
+                margin: 5px;
+                direction: rtl;
+            }
+
+            p {
+                text-align: center;
+                font-family: Tanha;
+                margin: 5px;
+                direction: rtl;
+            }
+
+            button {
+                width: 50%;
+                font-family: Tanha;
+                direction: rtl;
+                outline: none;
+                background-color: #f0f0f0;
+                border: 1px solid rgb(233, 233, 233);
+                border-radius: 30px;
+                cursor: pointer;
+                transition: all 1s;
+                margin: 10px;
+                padding: 7px;
+
+                &:hover {
+                    box-shadow: 1px 1px 10px $Color-three;
+                    background-color: #dadada;
+                }
+
+                &:active {
+                    background-color: #bebebe;
+                }
+            }
+        }
+
+        &:hover {
+            div {
+                top: -100%;
+            }
+        }
+    }
+}
+
+.Call-Me {
+    // border: 1px solid #656565;
+    position: relative;
+    border-radius: 40px;
+    box-shadow: 1px 1px 70px #e4e3e3;
+    width: 70vw;
+    height: 80vh;
+    margin: 100px auto;
+    opacity: 30%;
+    bottom: -30vh;
+    transition: all 1s;
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .Call {
+        border-left: 1px solid $Color-five;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 90%;
+        margin: auto 10px;
+
+        h1 {
+            font-family: Lalezar;
+            text-align: center;
+            direction: rtl;
+            margin: 10px 5px;
+        }
+
+        li {
+            font-family: Tanha;
+            text-align: center;
+            direction: rtl;
+            margin: 10px 5px;
+            list-style: none;
+        }
+
+        p {
+            font-family: Tanha;
+            text-align: center;
+            direction: rtl;
+            margin: 10px 5px;
+        }
+
+        .Social-Media {
+            margin: 10px auto;
+
+            a {
+                margin: 5px;
+
+                i {
+                    color: $Color-five;
+                    font-size: 40px;
+                    transition: all 0.7s;
+                }
+
+                &:hover {
+                    i {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .form {
+        width: 45%;
+        height: 90%;
+        margin: 30px 10px;
+        direction: rtl;
+
+        h2 {
+            font-family: Lalezar;
+            text-align: right;
+            direction: rtl;
+        }
+
+        input {
+            width: 90%;
+            margin: 15px 5px;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            background-color: #f1f1f1;
+            direction: rtl;
+            text-align: right;
+            padding: 5px;
+            font-family: Tanha;
+            display: block;
+            transition: all 0.7s;
+
+            &:hover {
+                background-color: #e6e4e4;
+            }
+            
+            &:focus {
+                box-shadow: 1px 1px 10px #c2c2c2;
+            }
+        }
+
+        textarea {
+            width: 90%;
+            margin: 15px 5px;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            background-color: #f1f1f1;
+            direction: rtl;
+            text-align: right;
+            padding: 5px;
+            font-family: Tanha;
+            display: block;
+            resize: none;
+            transition: all 0.7s;
+
+            &:hover {
+                background-color: #e6e4e4;
+            }
+
+            &:focus {
+                box-shadow: 1px 1px 10px #c2c2c2;
+            }
+        }
+
+        button {
+            font-family: Tanha;
+            width: 40%;
+            height: 5vh;
+            border-radius: 40px;
+            background-color: $Color-two;
+            cursor: pointer;
+            color: white;
+            outline: none;
+            border: none;
+            margin: 10px auto;
+            display: block;
+            transition: all 0.7s;
+
+            &:hover {
+                background-color: $Color-one;
+                box-shadow: 1px 1px 10px $Color-one;
+            }
+
+            &:active {
+                background-color: $Color-four;
+            }
+        }
+    }
+}
+
+.Footer {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    margin-top: 10px;
+    background-color: $Color-one;
+    box-shadow: 1px 1px 30px $Color-one;
+    border: 1px solid $Color-one;
+    bottom: -30vh;
+    transition: all 1s;
+
+    .Main-Footer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h3 {
+        color: white;
+        text-align: center;
+        font-family: Lalezar;
+        font-size: 30px;
+    }
+
+    p {
+        color: white;
+        text-align: center;
+        font-family: Tanha;
+        font-size: 20px;
+    }
+}

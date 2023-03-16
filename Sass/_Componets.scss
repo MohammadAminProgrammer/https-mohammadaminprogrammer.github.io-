@@ -1,0 +1,51 @@
+$Color-one: #2c38a7;
+$Color-two: #193ad1;
+$Color-three: #e9e9e9;
+$Color-four: #1f2877;
+$Color-five: #7c7c7c;
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    background-color: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #acacac;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: #929292;
+    }
+
+    &:active {
+        background-color: #6d6d6d;
+    }
+}
+
+@font-face {
+    font-family: Lalezar;
+    src: url("/Fonts/Lalezar/Lalezar.ttf");
+    src: url("/Fonts/Lalezar/Lalezar-Regular.otf");
+    src: url("/Fonts/Lalezar/Lalezar.woff");
+}
+
+@font-face {
+    font-family: Tanha;
+    src: url("/Fonts/tanha-font-v0.9/Tanha.ttf");
+    src: url("/Fonts/tanha-font-v0.9/Tanha.eot");
+    src: url("/Fonts/tanha-font-v0.9/Tanha.woff");
+}
+
+font-face {
+    font-family: 'fontello';
+    src: url('./font/fontello.eot?63232081');
+    src: url('./font/fontello.eot?63232081#iefix') format('embedded-opentype'),
+         url('./font/fontello.woff?63232081') format('woff'),
+         url('./font/fontello.ttf?63232081') format('truetype'),
+         url('./font/fontello.svg?63232081#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
